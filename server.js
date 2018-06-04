@@ -60,6 +60,12 @@ app.get('/about', (request, response) => {
    });
 });
 
+app.get('/projects', (req, res) => {
+   res.render('project.hbs', {
+    pageTitle : 'Projects'
+   });
+});
+
 app.get('/bad', (request, response) => {
     response.send({
         errorMessage : 'Unable to handle request'
